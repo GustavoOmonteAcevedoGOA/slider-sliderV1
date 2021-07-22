@@ -65,9 +65,12 @@ img{
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    background-color: rgb(14, 131, 226);
-    border: 1px solid rgb(14, 131, 226);
+    background-color: gray;
+    border: 2px solid rgb(14, 131, 226);
     cursor: pointer;
+}
+.dot.active{
+    background-color: rgb(14, 131, 226);
 }
 .dot:not(:last-of-type){
     margin-right: 2.5rem;
