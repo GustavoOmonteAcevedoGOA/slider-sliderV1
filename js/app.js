@@ -10,7 +10,7 @@ function detenerContador() {
     clearInterval(SliderAuto);
 }
 
-const NumberSliders = 4
+const NumberSliders = 8;
 let CurrentDot= 1;
 
 

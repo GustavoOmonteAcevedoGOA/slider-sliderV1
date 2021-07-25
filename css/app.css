@@ -2,7 +2,7 @@
   --MobileHeightSlider: 40rem;
   --LaptopHeightSlider: 50rem;
   --DesktopHeightSlider: 70rem;
-  --NumberSliders: 4;
+  --NumberSliders: 8;
 }
 html {
   font-size: 62.5%;
