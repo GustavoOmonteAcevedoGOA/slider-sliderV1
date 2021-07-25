@@ -1,79 +1,80 @@
-
-html{
-    font-size: 62.5%;
+:root {
+  --HeightSlider: 80rem;
+  --NumberSliders: 4;
 }
-*,*::before,*::after{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+html {
+  font-size: 62.5%;
 }
-img{
-    width: 100%;
-    height: 100%;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-.container-slider{
-    width: 100%;
-    position: relative;
-    overflow: hidden;    
-
+img {
+  width: 100%;
+  height: 100%;
 }
-.slider{
-    display: flex;
-    height: 100%;
-    margin-left: -100%;
-    
+.container-slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
-.item-slider{
-    width: 100%;
+.slider {
+  display: flex;
+  height: var(--HeightSlider);
+  margin-left: -100%;
+  width: calc(100% * var(--NumberSliders));
 }
-.item-slider img{
-    object-fit: cover;
-    object-position: bottom;
+.item-slider {
+  width: 100%;
+}
+.item-slider img {
+  object-fit: cover;
+  object-position: bottom;
 }
 
 .slider-btn {
-    position: absolute;
-    top:50%;
-    font-size: 5rem;
-    font-weight: bold;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 6rem;
-    text-align: center;
-    z-index: 10;
-    transform: translateX(-50%);
-    cursor: pointer;    
+  position: absolute;
+  top: 50%;
+  font-size: 5rem;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 6rem;
+  text-align: center;
+  z-index: 10;
+  transform: translateX(-50%);
+  cursor: pointer;
 }
-.slider-btn:hover{
-    background-color: white;
-
+.slider-btn:hover {
+  background-color: white;
 }
 .slider-btn-right {
-    right: 0rem;
+  right: 0rem;
 }
 .slider-btn-left {
-    left: 6rem;
+  left: 6rem;
 }
 
-.dots{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 6rem;
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
 }
-.dot{
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background-color: gray;
-    border: 2px solid rgb(14, 131, 226);
-    cursor: pointer;
+.dot {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: gray;
+  border: 2px solid rgb(14, 131, 226);
+  cursor: pointer;
 }
-.dot.active{
-    background-color: rgb(14, 131, 226);
+.dot.active {
+  background-color: rgb(14, 131, 226);
 }
-.dot:not(:last-of-type){
-    margin-right: 2.5rem;
+.dot:not(:last-of-type) {
+  margin-right: 2.5rem;
 }
-
-
