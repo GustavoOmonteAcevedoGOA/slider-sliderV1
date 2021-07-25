@@ -140,7 +140,7 @@ EveryDot.forEach( (dot) => {
             dotdisable.style.pointerEvents = 'none';
         });
         if(CurrentDot < targetDotAttribute){
-            let imageJump = targetDotAttribute - CurrentDot; 
+            let imageJump = targetDotAttribute - CurrentDot -1; 
            for (let index = 0; index < imageJump; index++) {
             let FirstItemSlider = document.querySelector('.item-slider');
             Slider.style.marginLeft = '-200%';
@@ -168,12 +168,12 @@ EveryDot.forEach( (dot) => {
             iniciarContador();
                
            }
+           SliderNext();    
            
         }
         if(CurrentDot > targetDotAttribute){
 
-            let imageJump = CurrentDot - targetDotAttribute;
-
+            let imageJump = CurrentDot - targetDotAttribute -1;
             for (let index = 0; index < imageJump; index++) {
                 
                 let SliderNew = document.querySelectorAll('.item-slider');
@@ -203,13 +203,8 @@ EveryDot.forEach( (dot) => {
                 iniciarContador();
                 
             }
+            SliderPrev();
         }
-        
-        
-        EveryDot.forEach(dotdisable => {
-            dotdisable.style.pointerEvents = 'auto';
-        });
-        
     });
 });
 

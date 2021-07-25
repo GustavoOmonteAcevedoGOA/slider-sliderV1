@@ -1,5 +1,7 @@
 :root {
-  --HeightSlider: 80rem;
+  --MobileHeightSlider: 40rem;
+  --LaptopHeightSlider: 50rem;
+  --DesktopHeightSlider: 70rem;
   --NumberSliders: 4;
 }
 html {
@@ -23,16 +25,27 @@ img {
 }
 .slider {
   display: flex;
-  height: var(--HeightSlider);
+  height: var(--MobileHeightSlider);
   margin-left: -100%;
   width: calc(100% * var(--NumberSliders));
+}
+
+@media (min-width: 768px) {
+  .slider {
+    height: var(--LaptopHeightSlider);
+  }
+}
+@media (min-width: 992px) {
+  .slider {
+    height: var(--DesktopHeightSlider);
+  }
 }
 .item-slider {
   width: 100%;
 }
 .item-slider img {
   object-fit: cover;
-  object-position: bottom;
+  object-position: center center;
 }
 
 .slider-btn {
