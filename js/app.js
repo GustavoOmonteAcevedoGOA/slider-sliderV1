@@ -1,16 +1,20 @@
+//default animation
 SliderAuto = setInterval(() => {
     SliderNext();
-    }, 7000); 
+    //animation time
+}, 7000); 
 function iniciarContador() {
     SliderAuto = setInterval(() => {
-    SliderNext();
+        SliderNext();
+        //animation time
     }, 7000); 
 }
 function detenerContador() {
     clearInterval(SliderAuto);
 }
-
+//Here we indicate how many images our Slider will have
 const NumberSliders = 8;
+//Here we indicate how many images our Slider will have
 let CurrentDot= 1;
 
 

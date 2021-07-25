@@ -1,7 +1,9 @@
 :root {
+  /*--===========Slider height=============--*/
   --MobileHeightSlider: 40rem;
   --LaptopHeightSlider: 50rem;
   --DesktopHeightSlider: 70rem;
+  /*--===========Here we indicate how many images our Slider will have=============--*/
   --NumberSliders: 8;
 }
 html {
