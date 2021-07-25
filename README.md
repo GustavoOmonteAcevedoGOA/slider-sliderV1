@@ -27,7 +27,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/GustavoOmonteAcevedoGOA/plantilla5/blob/main/img/SliderVersion1.png)
+![screenshot](https://github.com/GustavoOmonteAcevedoGOA/slider-sliderV1/blob/main/img/SliderVersion1.png)
 
 In order to modify this project by adding more images, you must change 2 variables, one in CSS and the other in JS, both are at the beginning of their indicated documents
 
